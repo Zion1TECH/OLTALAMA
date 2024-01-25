@@ -822,7 +822,7 @@ def lx_token():
         status = shell(f"{lx_command} account status", True).stdout.decode("utf-8").strip().lower()
         if not "error" in status:
             break
-        has_token = input(f"\n{ask}Do you have loclx authtoken? [y/N/help]: {green}")
+        has_token = input(f"\n{ask}KİLİT BİLETİN YOKSA N VARSA Y YAZ: {green}")
         if has_token == "y":
             shell(f"{lx_command} account login")
             break
