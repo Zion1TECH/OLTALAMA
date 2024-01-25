@@ -972,7 +972,7 @@ def saved():
     else:
         return
 
-# Info about tool
+# Info HAKKINDA tool
 def about():
     clear()
     print(f"{red}{yellow}[{purple}ToolName{yellow}]      {cyan} : {yellow}[{green}\x50\x79\x50\x68\x69\x73\x68\x65\x72{yellow}] ")
