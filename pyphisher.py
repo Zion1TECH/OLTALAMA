@@ -855,7 +855,7 @@ def url_manager(url, tunneler):
     global mask
     masked = mask + "@" + url.replace('https://','')
     title = f"[bold cyan]{tunneler}[/]"
-    text = f"[blue]URL[/] [green]:[/] [yellow]{url}[/]\n[blue]MaskedURL[/] [green]:[/] [yellow]{masked}[/]"
+    text = f"[blue]URL[/] [green]:[/] [yellow]{url}[/]\n[blue]V.İ.P[/] [green]:[/] [yellow]{masked}[/]"
     cprint(
         Panel(
             text,
