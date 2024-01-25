@@ -1,11 +1,11 @@
 # -*- coding: UTF-8 -*-
 # ToolName   : PyPhisher
-# Author     : KasRoudra
+# Author     : ZioN
 # Version    : 2.1
 # License    : MIT
-# Copyright  : KasRoudra (2021-2023)
-# Github     : https://github.com/KasRoudra
-# Contact    : https://t.me/KasRoudra
+# Copyright  : ZioN (2021-2023)
+# Github     : https://github.com/Zion1TECH
+# Contact    : https://www.instagram.com/emir.kanlioglu/?igsh=MzNlNGNkZWQ4Mg%3D%3D
 # Description: PyPhisher is a phishing tool in python
 # Tags       : Facebook Phishing, Github Phishing, Instagram Phishing and 70+ other sites available
 # 1st Commit : 08/08/2021
@@ -270,7 +270,7 @@ else:
     saved_file = f"{home}/.creds.txt"
 
 
-print(f"\n{info}Please wait!{nc}")
+print(f"\n{info}BEKLE Bİ AQ{nc}")
 
 argparser = ArgumentParser()
 
