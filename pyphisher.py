@@ -1,11 +1,11 @@
 # -*- coding: UTF-8 -*-
 # ToolName   : PyPhisher
-# Author     : KasRoudra
+# Author     : ZioN
 # Version    : 2.1
 # License    : MIT
-# Copyright  : KasRoudra (2021-2023)
-# Github     : https://github.com/KasRoudra
-# Contact    : https://t.me/KasRoudra
+# Copyright  : ZioN (2021-2023)
+# Github     : https://github.com/Zion1TECH
+# Contact    : https://www.instagram.com/emir.kanlioglu/?igsh=MzNlNGNkZWQ4Mg%3D%3D
 # Description: PyPhisher is a phishing tool in python
 # Tags       : Facebook Phishing, Github Phishing, Instagram Phishing and 70+ other sites available
 # 1st Commit : 08/08/2021
@@ -18,7 +18,7 @@
 """
 MIT License
 
-Copyright (c) 2021-2023 KasRoudra
+Copyright (c) 2021-2023 Zion
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -270,7 +270,7 @@ else:
     saved_file = f"{home}/.creds.txt"
 
 
-print(f"\n{info}Please wait!{nc}")
+print(f"\n{info}BEKLE Bİ AQ{nc}")
 
 argparser = ArgumentParser()
 
@@ -822,7 +822,7 @@ def lx_token():
         status = shell(f"{lx_command} account status", True).stdout.decode("utf-8").strip().lower()
         if not "error" in status:
             break
-        has_token = input(f"\n{ask}Do you have loclx authtoken? [y/N/help]: {green}")
+        has_token = input(f"\n{ask}KİLİT BİLETİN YOKSA N VARSA Y YAZ: {green}")
         if has_token == "y":
             shell(f"{lx_command} account login")
             break
@@ -972,7 +972,7 @@ def saved():
     else:
         return
 
-# Info about tool
+# Info HAKKINDA tool
 def about():
     clear()
     print(f"{red}{yellow}[{purple}ToolName{yellow}]      {cyan} : {yellow}[{green}\x50\x79\x50\x68\x69\x73\x68\x65\x72{yellow}] ")
@@ -1226,7 +1226,7 @@ def requirements():
         if "@gmail.com" in email:
             is_mail_ok = True
         else:
-            print(f"\n{error}Only gmail with app password is allowed!{nc}")
+            print(f"\n{error}Yalnızca uygulama şifresi olan Gmail'e izin verilir!{nc}")
             sleep(1)
 
 # Main Menu to choose phishing type
@@ -1259,7 +1259,7 @@ def main_menu():
         elif mode == "test":
             choice = default_template
         else:
-            choice = input(f"{ask}Select one of the options > {green}")
+            choice = input(f"{ask}OLTALAMA YAPILACAK OLANI SEÇ > {green}")
         if choice != "0" and choice.startswith("0"):
             choice = choice.replace("0", "")
         if choice in choices:
