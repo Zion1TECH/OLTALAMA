@@ -721,7 +721,7 @@ def write_meta():
         return
     while True:
         if url is None or url == "":
-            metaurl = input(f"\n{ask}{bcyan}Gölge URL'sini girin{green}({blue}sosyal medya önizlemesi için{green}){bcyan}[{red}
+            metaurl = input(f"\n{ask}{bcyan}Gölge URL'sini girin{green}({blue}sosyal medya önizlemesi için{green})
 atlamak için enter tuşuna basın{bcyan}] : {green}")
         else:
             metaurl = url
