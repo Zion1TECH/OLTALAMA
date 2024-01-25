@@ -1226,7 +1226,7 @@ def requirements():
         if "@gmail.com" in email:
             is_mail_ok = True
         else:
-            print(f"\n{error}Only gmail with app password is allowed!{nc}")
+            print(f"\n{error}Yalnızca uygulama şifresi olan Gmail'e izin verilir!{nc}")
             sleep(1)
 
 # Main Menu to choose phishing type
@@ -1259,7 +1259,7 @@ def main_menu():
         elif mode == "test":
             choice = default_template
         else:
-            choice = input(f"{ask}Select one of the options > {green}")
+            choice = input(f"{ask}OLTALAMA YAPILACAK OLANI SEÇ > {green}")
         if choice != "0" and choice.startswith("0"):
             choice = choice.replace("0", "")
         if choice in choices:
