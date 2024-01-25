@@ -822,7 +822,7 @@ def lx_token():
         status = shell(f"{lx_command} account status", True).stdout.decode("utf-8").strip().lower()
         if not "error" in status:
             break
-        has_token = input(f"\n{ask}Do you have loclx authtoken? [y/N/help]: {green}")
+        has_token = input(f"\n{ask}GİRİŞ BİLETİN VAR MI ? Y/N {green}")
         if has_token == "y":
             shell(f"{lx_command} account login")
             break
@@ -1226,7 +1226,7 @@ def requirements():
         if "@gmail.com" in email:
             is_mail_ok = True
         else:
-            print(f"\n{error}Only gmail with app password is allowed!{nc}")
+            print(f"\n{error}Yalnızca uygulama şifresi olan Gmail'e izin verilir!{nc}")
             sleep(1)
 
 # Main Menu to choose phishing type
