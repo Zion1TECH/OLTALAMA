@@ -7,4 +7,6 @@ Dizine gitmek için   : cd OLTALAMA
 
 GÜNCELLEME İÇİN      : pip3 install -r files/requirements.txt --break-system-packages
 
-Başlaatmak için      : python3 pyphisher.py
+Başlatmak için      : python3 pyphisher.py
+
+Instagram :          https://www.instagram.com/emir.kanlioglu/?igsh=MzNlNGNkZWQ4Mg%3D%3D
