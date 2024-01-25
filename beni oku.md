@@ -1,12 +1,17 @@
 Kali Linux ve Termux Android İçin Kimlik Avı Aracı
 Yazacağınız Kodlar Aşşağıdaki Gibidir;
 
-DOSYA KURMAK İÇİN    : git clone https://github.com/Zion1TECH/OLTALAMA.git
+DOSYA KURMAK İÇİN (KOPYALA)
+• git clone https://github.com/Zion1TECH/OLTALAMA.git
 
-Dizine gitmek için   : cd OLTALAMA
+Dizine gitmek için (KOPYALA)
+• cd OLTALAMA
 
-GÜNCELLEME İÇİN      : pip3 install -r files/requirements.txt --break-system-packages
+GÜNCELLEME İÇİN (KOPYALA)
+• pip3 install -r files/requirements.txt --break-system-packages
 
-Başlatmak için      : python3 pyphisher.py
+Başlatmak için (KOPYALA)
+• python3 pyphisher.py
 
-Instagram :          https://www.instagram.com/emir.kanlioglu/?igsh=MzNlNGNkZWQ4Mg%3D%3D
+  Instagram    (TIKLA)
+• https://www.instagram.com/emir.kanlioglu/?igsh=MzNlNGNkZWQ4Mg%3D%3D
