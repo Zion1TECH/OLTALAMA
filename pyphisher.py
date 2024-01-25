@@ -740,7 +740,7 @@ def write_redirect():
     global url, redir_url
     while True:
         if url is None or url == "":
-            redirect_url = input(f"\n{ask}{bcyan}Enter redirection url{bcyan}[{red}press enter to skip{bcyan}] : {green}")
+            redirect_url = input(f"\n{ask}{bcyan}Yönlendirme URL'sini girin{bcyan}[{red}atlamak için enter tuşuna basın{bcyan}] : {green}")
         else:
             redirect_url = url
         if redirect_url is None or redirect_url == "":
